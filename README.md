@@ -26,6 +26,7 @@
 ---
 
 <a id="project-overview"></a>
+
 ## 📌 Project Overview
 This project analyzes a **Music Store Database** using **PostgreSQL** (PgAdmin4).  
 Goal: answer real-world business questions related to customers, sales, invoices, artists, and genres using SQL queries and present actionable insights.
@@ -33,6 +34,7 @@ Goal: answer real-world business questions related to customers, sales, invoices
 ---
 
 <a id="tools--skills-used"></a>
+
 ## 🛠 Tools & Skills Used
 - **Database**: PostgreSQL (PgAdmin4)  
 - **SQL Concepts**:
@@ -57,7 +59,7 @@ SELECT *
 FROM employee
 ORDER BY levels DESC
 LIMIT 1;
-
+```
 <a id="set1-q2"></a>
 
 **Q2. Which countries have the most invoices?**
