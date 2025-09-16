@@ -47,6 +47,7 @@ Goal: answer real-world business questions related to customers, sales, invoices
 ---
 
 <a id="set-1-sales--customers"></a>
+
 **✅ Set 1: Sales & Customers**
 
 <a id="set1-q1"></a>
@@ -58,6 +59,7 @@ ORDER BY levels DESC
 LIMIT 1;
 
 <a id="set1-q2"></a>
+
 **Q2. Which countries have the most invoices?**
 ```
 SELECT COUNT(*) AS total_invoices, billing_country
@@ -67,6 +69,7 @@ ORDER BY total_invoices DESC;
 ```
 
 <a id="set1-q3"></a>
+
 **Q3. What are the top 3 values of total invoice?**
 ```
 SELECT total
@@ -76,6 +79,7 @@ LIMIT 3;
 ```
 
 <a id="set1-q4"></a>
+
 **Q4. Which city has the best customers (highest invoice total)?**
 ```
 SELECT billing_city, SUM(total) AS invoice_total
@@ -87,6 +91,7 @@ ORDER BY invoice_total DESC;
 **✅ Example Answer: Prague**
 
 <a id="set1-q5"></a>
+
 **Q5. Who is the best customer (highest spender)?**
 ```
 SELECT c.customer_id, c.first_name, c.last_name,
@@ -101,9 +106,11 @@ LIMIT 1;
 ---
 
 <a id="set-2-music-trends"></a>
+
 **✅ Set 2: Music Trends**
 
 <a id="set2-q1"></a>
+
 **Q1. Rock Music listeners (email, first name, last name) ordered by email.**
 ```
 SELECT DISTINCT c.email, c.first_name, c.last_name
@@ -120,6 +127,7 @@ ORDER BY c.email;
 ```
 
 <a id="set2-q2"></a>
+
 **Q2. Top 10 artists who wrote the most Rock tracks.**
 ```
 SELECT a.artist_id, a.name, COUNT(t.track_id) AS number_of_songs
@@ -134,6 +142,7 @@ LIMIT 10;
 ```
 
 <a id="set2-q3"></a>
+
 **Q3. Tracks longer than the average song length.**
 ```
 SELECT name, milliseconds
@@ -149,9 +158,11 @@ LIMIT 10;
 ---
 
 <a id="set-3-advanced-insights"></a>
+
 **✅ Set 3: Advanced Insights**
 
 <a id="set3-q1"></a>
+
 **Q1. Amount spent by each customer on the best-selling artist.**
 ```
 WITH best_selling_artist AS (
@@ -178,6 +189,7 @@ ORDER BY amount_spent DESC;
 ```
 
 <a id="set3-q2"></a>
+
 **Q2. Most popular music genre in each country.**
 ```
 WITH genre_country_counts AS (
@@ -198,6 +210,7 @@ ORDER BY country;
 ```
 
 <a id="set3-q3"></a>
+
 **Q3. Highest-spending customer per country.**
 
 Method 1: Using MAX aggregate
@@ -240,7 +253,8 @@ ORDER BY billing_country;
 ---
 
 <a id="key-insights"></a>
-##📊 Key Insights
+
+## 📊 Key Insights
 
 - Identified the best customer by total spend.
 
@@ -253,13 +267,15 @@ ORDER BY billing_country;
 ---
 
 <a id="conclusion"></a>
-##🚀 Conclusion
+
+## 🚀 Conclusion
 This project demonstrates how SQL can be used to extract actionable insights from a relational database.
 It highlights advanced querying skills like joins, aggregates, CTEs, and window functions to solve real-world business problems.
 
 ---
 
 <a id="project-structure"></a>
+
 ## 📂 Project Structure
 
 The project is organized as follows:
@@ -283,6 +299,7 @@ Music_Store_Database/
 ---
 
 <a id="Author--Contact"></a>
+
 ## Author & Contact
 **Chirag Tomar**
 
