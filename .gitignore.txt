@@ -1,0 +1,11 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Database dumps / backups
+*.sql
+*.dump
+*.bak
+
+# Logs
+*.log
